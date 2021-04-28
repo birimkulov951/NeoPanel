@@ -1,0 +1,97 @@
+name: neopanel
+description: CMS app for NeoLabs.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.1
+author: Akyl Birimkulov
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+
+  # This is our modular
+  core:
+    path: modules/core
+  dependencies:
+    path: modules/dependencies
+  shared:
+    path: modules/shared
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  test: any
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/lang/ru.json
+    - assets/images/logo.jpg
+    - assets/images/profile_placeholder.png
+    - assets/icons/ic_action_history_black.svg
+    - assets/icons/ic_action_history_green.svg
+    - assets/icons/ic_add_purple.svg
+    - assets/icons/ic_add_white.svg
+    - assets/icons/ic_additional_settings.svg
+    - assets/icons/ic_additional_settings_green.svg
+    - assets/icons/ic_alert.svg
+    - assets/icons/ic_analytics.svg
+    - assets/icons/ic_approve.svg
+    - assets/icons/ic_archive.svg
+    - assets/icons/ic_back.svg
+    - assets/icons/ic_calendar.svg
+    - assets/icons/ic_city_black.svg
+    - assets/icons/ic_city_green.svg
+    - assets/icons/ic_close.svg
+    - assets/icons/ic_delete.svg
+    - assets/icons/ic_deny.svg
+    - assets/icons/ic_details_black.svg
+    - assets/icons/ic_details_green.svg
+    - assets/icons/ic_drop_down.svg
+    - assets/icons/ic_drop_down_purple.svg
+    - assets/icons/ic_drop_up_purple.svg
+    - assets/icons/ic_edit.svg
+    - assets/icons/ic_employees.svg
+    - assets/icons/ic_exit.svg
+    - assets/icons/ic_filter.svg
+    - assets/icons/ic_invisible.svg
+    - assets/icons/ic_logo.svg
+    - assets/icons/ic_main_page.svg
+    - assets/icons/ic_menu.svg
+    - assets/icons/ic_minus.svg
+    - assets/icons/ic_notifications_black.svg
+    - assets/icons/ic_notifications_green.svg
+    - assets/icons/ic_paint.svg
+    - assets/icons/ic_plus.svg
+    - assets/icons/ic_restore.svg
+    - assets/icons/ic_settings.svg
+    - assets/icons/ic_students.svg
+    - assets/icons/ic_successful.svg
+    - assets/icons/ic_unsuccessful.svg
+    - assets/icons/ic_visible.svg
+    - assets/icons/ic_wait_list.svg
+
+  fonts:
+    - family: Golos
+      fonts:
+        - asset: assets/fonts/Golos_Regular.ttf
+        - asset: assets/fonts/Golos_Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Golos_SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Golos_Medium.ttf
+          weight: 500
