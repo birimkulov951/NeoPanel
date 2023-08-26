@@ -1,3 +1,3 @@
-# neopanel
+NeoPanel
 
 My Second internship project.
